@@ -76,8 +76,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Header 
 - Routing of App 
 - Sign In form page
-- Sing Up form page
+- Sign Up form page
 - Form Validation 
+- Firebase npm install, and adding firebase to the project
 
 
 # Features of the App 
