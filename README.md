@@ -79,6 +79,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Sign Up form page
 - Form Validation 
 - Firebase npm install, and adding firebase to the project
+- create and sign in the user on the firebase
+- create Redux store and provide it to the app 
+- Dispatch the action and update the redux store on sign in and sign out
 
 
 # Features of the App 
