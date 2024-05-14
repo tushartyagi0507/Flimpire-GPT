@@ -82,6 +82,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - create and sign in the user on the firebase
 - create Redux store and provide it to the app 
 - Dispatch the action and update the redux store on sign in and sign out
+- Bug fix of sign out and browse page put tht useEffect in Header 
+- if the user is not logged in redirect to / if logged in then /browse 
+- unsubcribe the onauth when the Header comp is unmounts 
 
 
 # Features of the App 
