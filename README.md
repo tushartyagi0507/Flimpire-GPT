@@ -85,6 +85,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Bug fix of sign out and browse page put tht useEffect in Header 
 - if the user is not logged in redirect to / if logged in then /browse 
 - unsubcribe the onauth when the Header comp is unmounts 
+- Added hardcore values in constants.js file 
+- Register TMDB API and create an app and get access token
+- Get data from TMDB now playing movie List and used a custom Hook 
 
 
 # Features of the App 

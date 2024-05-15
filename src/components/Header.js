@@ -37,7 +37,7 @@ signOut(auth).then(() => {
     }  
   })
   // unsubscribing when the comp unmounts 
-return unsubscribe()
+return () =>  unsubscribe()
 },[])
 
   return (

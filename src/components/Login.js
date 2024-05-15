@@ -75,9 +75,6 @@ const Login = () => {
 
            dispatch(addUser({uid: uid, email: email , displayName: displayName, photoURL: photoURL}));
             })
-            .catch((error) => {
-              
-            });
           console.log("signed In: ", user);
         })
         .catch((error) => {
