@@ -3,10 +3,12 @@ import Body from "./components/Body"
 import store from "./utils/store";
 
 function App() {
-  return (
+  return ( 
+    <div className="bg-black">
     <Provider store={store}> 
      <Body/>
     </Provider>
+    </div>
   );
 }
 
