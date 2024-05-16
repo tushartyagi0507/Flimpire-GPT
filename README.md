@@ -88,6 +88,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Added hardcore values in constants.js file 
 - Register TMDB API and create an app and get access token
 - Get data from TMDB now playing movie List and used a custom Hook 
+- Creating browse page starting with the main conatiner 
+- create the titl page for the main container 
 
 
 # Features of the App 
