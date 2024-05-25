@@ -1,17 +1,31 @@
 import Header from "./Header";
-import useNowPlayingMoveis from "../Hooks/useNowPlayingMovies"
+import useNowPlayingMovies from "../Hooks/useNowPlayingMovies"
+import usePopularMovies from "../Hooks/usePopularMovies"
 import MainContainer from ".//MainContainer.js"
 import SecondaryContainer from "./SecondaryContainer"
+import useTopRatedMovies from "../Hooks/useTopRated..js";
+import useUpcomingMovies from "../Hooks/useUpcomingMovies.js";
+import GptSearch from "./GptSearch.js";
+import { useSelector } from "react-redux";
 
 const Browse = () => {
 
-  useNowPlayingMoveis();
+  const viewGptBar = useSelector((store)=> store.gpt.showGptBar)
 
+  useNowPlayingMovies();
+  usePopularMovies();
+ useTopRatedMovies();
+ useUpcomingMovies();
   return (
     <div>
       <Header />
-      <MainContainer/>
-      <SecondaryContainer/>
+      {
+        viewGptBar ? (<GptSearch/> ): ( <>
+        <MainContainer/>
+        <SecondaryContainer/>
+        </>
+        )
+      }
     </div>
   );
 };
