@@ -13,5 +13,10 @@ export const API_options = {
   };
 
 export const CDN_IMG = "https://image.tmdb.org/t/p/w500"
+
+export const Supported_lang = [{identifier: "English", name: "English"},
+{identifier: "Hindi", name: "Hindi"},
+{identifier: "Spanish", name: "Spanish"}
+]
   
   
