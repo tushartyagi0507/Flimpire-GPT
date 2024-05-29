@@ -5,19 +5,23 @@ const Footer = () => {
   return (
     <div className=' sticky bottom-40 bg-black w-full -pb-16 mt-4'>
     
- <div className='flex justify-between text-gray-500'>
- <div className='w-28 ml-12'>
+ <div className='flex flex-col text-gray-500
+ md:flex md:flex-row md:justify-between'>
+ <div className='w-28 mx-auto
+      md:w-28 md:ml-12'>
         <img src={project_logo}
         alt="project logo"/>
     </div>
-    <div className='hover:underline'>
-        <span className='mr-6 '>About</span>
-        <span className='mr-6 '>Privacy Policy</span>
-        <span className='mr-6 '>Contact</span>
+    <div className='hover:underline mt-2 flex justify-evenly
+    md:m-0'>
+        <span className='md:mr-6 '>About</span>
+        <span className='md:mr-6 '>Privacy Policy</span>
+        <span className='md:mr-6 '>Contact</span>
     </div>
  </div>
- <div className='text-white w-full mx-12'>
-____________________________________________________________________________________________________________________________________________________________
+ <div className='text-white w-full mx-0
+ md:mx-12'>
+___________________________________________________________________________________________________________________________________________________________________
 </div>
 <div className='text-center text-white mt-4'>
     Created By- <a href="https://www.linkedin.com/in/tushartyagi0507" target='_blank' 

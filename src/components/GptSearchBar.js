@@ -91,13 +91,16 @@ const handleGptSearchClick = async () => {
 }
   return (
     <div className="flex justify-center pt-[20%]">
-      <div className="bg-black w-6/12 absolute z-10">
+      <div className="bg-transparent absolute z-10 w-11/12 
+      md:w-6/12 md:m-0 md:bg-black">
         <input
           placeholder={lang[langSelected]?.GptPlaceholder}
-          className="p-2 pl-4 w-10/12 rounded-lg h-14"
+          className=" w-full rounded-lg h-14 pl-2
+          md:w-10/12 md:p-2 md:pl-4"
           ref={searchText}
         />
-        <button className="p-2 text-white rounded-lg bg-red-600 w-2/12 h-14"
+        <button className=" text-white rounded-lg bg-red-600 h-14 mt-2 p-2 w-3/12 ml-[36%]
+        md:w-2/12 md:h-14 md:p-2 md:m-0"
         onClick={handleGptSearchClick}>
           {loadingBtn ? (
               <div className="w-5 text-center ml-3 md:ml-12 h-5 border-t m border-gray-300 border-solid rounded-full animate-spin"></div>

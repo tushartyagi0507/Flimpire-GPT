@@ -63,22 +63,28 @@ const Header = () => {
 
   return (
  
-     <div className="absolute w-full bg-gradient-to-b from-black z-20 flex justify-between">
-      <div className="w-44 ml-44 mt-6">
+     <div 
+     className="absolute w-full z-30 flex flex-col bg-gradient-to-b from-black
+     md:flex-row md:justify-between">
+      <div className="w-28 mx-auto mt-6 
+      md:ml-44 md:mt-6 md:w-44">
    <a href='/browse'><img src={project_logo} alt="logo" /> </a>     
       </div>
-     
 
       {user && (
-        <div className="flex mr-32 mt-6">
+        <div className="flex mt-4 mx-auto
+        md:mr-32 md:mt-6
+        ">
           <button
-            className="text-white font-bold align-middle w-18 h-10 mr-6 bg-purple-800 px-2 rounded-lg"
+            className="text-white text-xs align-middle w-18 h-10 mr-6 bg-purple-800 px-2 rounded-lg
+            md:w-18 md:h-10 md:font-bold md:text-lg"
             onClick={handleSearch}
           >
             {gptToggle ? "Home" : "Search GPT"}
           </button>
           {gptToggle && <select 
-          className="text-white font-bold align-middle w-18 h-10 mr-6 bg-gray-500 pl-2 rounded-lg"
+          className="text-white font-bold align-middle w-18 h-8 mr-6 bg-gray-500 pl-2 rounded-lg
+          md:font-bold md:text-lg md:w-18 md:h-10"
           onChange={handleLangChange}>
             {Supported_lang.map((lang) => {
               return (
@@ -94,7 +100,8 @@ const Header = () => {
             className="w-10 h-10"
           />
           <button
-            className="text-white font-bold align-middle w-18 h-10"
+            className="text-white font-bold align-middle w-18 h-8 text-xs
+            md:w-18 md:h-10 md:text-lg"
             onClick={handleSingOut}
           >
             {" "}

@@ -1,23 +1,17 @@
-import { useState } from "react";
 import useMovieTrailer from "../Hooks/useMovieTrailer";
 import { useSelector } from "react-redux";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVolumeXmark, faVolumeHigh } from "@fortawesome/free-solid-svg-icons";
 
-const VideoBackground = ({ movieId }) => {
-  const [mute, setmute] = useState(1);
+const VideoBackground = ({ movieId }) => {  
 
-  const handleMute = ()=>{
-    setmute(!mute)
-  }
-
+  const mute = useSelector((store)=> store.movies.isMute)
   const id = useSelector((store) => store?.movies?.trailer?.key);
   useMovieTrailer(movieId);
   return (
     <div>
       {/* {console.log(mute)} */}
       <iframe
-        className="w-screen h-screen"
+        className="w-screen aspect-video
+        md:w-screen md:h-screen"
         src={
           "https://www.youtube.com/embed/" +
           id +
@@ -28,11 +22,7 @@ const VideoBackground = ({ movieId }) => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerPolicy="strict-origin-when-cross-origin"
       ></iframe>
-      <div className="absolute text-2xl text-white left-[90%] top-[61%] z-10">
-        <button onClick={handleMute}>
-          {mute ? <FontAwesomeIcon icon={faVolumeXmark} />  : <FontAwesomeIcon icon={faVolumeHigh}/>}
-        </button>
-      </div>
+      
     </div>
   );
 };

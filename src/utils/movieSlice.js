@@ -10,9 +10,10 @@ trailer: null,
 popularMovies: null,
 topRatedMovies: null,
 upcomingMovies: null,
+isMute: 1,
  },
 reducers:{
-    addNowPlayingMovies : (state, action)=>{ 
+addNowPlayingMovies : (state, action)=>{ 
         state.nowPlayingMovies = action.payload;
 },
 addPopularMovies : (state, action)=>{ 
@@ -27,9 +28,11 @@ addUpcomingMovies: (state,action)=>{
 addTrailer:  (state,action)=>{
     state.trailer = action.payload;
 },
-
+addMute: (state)=>{
+    state.isMute = !state.isMute;
+}
 },
 })
 
-export const {addNowPlayingMovies, addTrailer, addPopularMovies, addTopRatedMovies, addUpcomingMovies} = moviesSlice.actions;
+export const {addNowPlayingMovies, addTrailer, addPopularMovies, addTopRatedMovies, addUpcomingMovies, addMute} = moviesSlice.actions;
 export default moviesSlice.reducer;
