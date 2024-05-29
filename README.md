@@ -90,6 +90,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Get data from TMDB now playing movie List and used a custom Hook 
 - Creating browse page starting with the main conatiner 
 - create the titl page for the main container 
+- Create GPT page and button on the Header 
+- Added toggle functionality to the GPT button 
+- Added lang button on the GPT page
+- Used Redux to to amek the page lanugae dynamic 
 
 
 # Features of the App 

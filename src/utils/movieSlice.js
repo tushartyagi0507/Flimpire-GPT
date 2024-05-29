@@ -26,7 +26,8 @@ addUpcomingMovies: (state,action)=>{
 },
 addTrailer:  (state,action)=>{
     state.trailer = action.payload;
-}
+},
+
 },
 })
 
