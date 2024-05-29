@@ -15,13 +15,12 @@ const GptSearch = () => {
          <div className="fixed -z-10">
         <img className="h-screen object-cover" src={background} alt="logo" />
       </div>
-      <div className="">
+      <div >
         <GptSearchBar />
-        <div className='mt-[40%] w-10/12 mx-auto'>
-            <MovieSuggestions/>
+        <MovieSuggestions/>
         </div>
       
-      </div>
+  
            
   
     </div>

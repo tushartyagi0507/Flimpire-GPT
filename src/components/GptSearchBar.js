@@ -85,13 +85,13 @@ const handleGptSearchClick = async () => {
     );
   } catch (error) {
     // Handle errors
-    console.error("An error occurred:", error.message);
+    // console.error("An error occurred:", error.message);
     setError(" Movie recommendations powered by Gemini are unavailable on request due to paid APIs")
   }
 }
   return (
-    <div className="flex justify-center">
-      <div className="bg-black w-6/12 absolute top-[30%] z-10">
+    <div className="flex justify-center pt-[20%]">
+      <div className="bg-black w-6/12 absolute z-10">
         <input
           placeholder={lang[langSelected]?.GptPlaceholder}
           className="p-2 pl-4 w-10/12 rounded-lg h-14"

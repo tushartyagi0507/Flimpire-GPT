@@ -7,6 +7,7 @@ import useTopRatedMovies from "../Hooks/useTopRated..js";
 import useUpcomingMovies from "../Hooks/useUpcomingMovies.js";
 import GptSearch from "./GptSearch.js";
 import { useSelector } from "react-redux";
+import Footer from "./Footer.js";
 
 const Browse = () => {
 
@@ -17,13 +18,14 @@ const Browse = () => {
  useTopRatedMovies();
  useUpcomingMovies();
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header />
       {
-        viewGptBar ? (<GptSearch/> ): ( <>
+        viewGptBar ? (<GptSearch/> ): ( <div className="bg-black">
         <MainContainer/>
         <SecondaryContainer/>
-        </>
+        <Footer/>
+        </div>
         )
       }
     </div>

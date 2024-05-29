@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { onAuthStateChanged } from "firebase/auth";
 import { useEffect } from "react";
-import { LOGO, Supported_lang } from "../utils/constants";
+import { Supported_lang, project_logo } from "../utils/constants";
 import { addShowGptBar } from "../utils/gptSlice";
 import { changeLanguage } from "../utils/ConfigSlice";
 
@@ -62,10 +62,12 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="absolute w-full bg-gradient-to-b from-black z-20 flex justify-between">
-      <div className="w-44 ml-44 mt-4">
-        <img src={LOGO} alt="logo" />
+ 
+     <div className="absolute w-full bg-gradient-to-b from-black z-20 flex justify-between">
+      <div className="w-44 ml-44 mt-6">
+   <a href='/browse'><img src={project_logo} alt="logo" /> </a>     
       </div>
+     
 
       {user && (
         <div className="flex mr-32 mt-6">

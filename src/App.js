@@ -4,7 +4,7 @@ import store from "./utils/store";
 
 function App() {
   return ( 
-    <div className="bg-black">
+    <div className="">
     <Provider store={store}> 
      <Body/>
     </Provider>
