@@ -12,7 +12,7 @@ const GptSearch = () => {
     
     <div>
          <div className="fixed -z-10">
-        <img className="h-screen object-cover" src={background} alt="logo" />
+        <img className="h-screen w-screen object-cover bg-fixed bg-cover" src={background} alt="logo" />
       </div>
       <div className='pt-24
       md:p-0'>

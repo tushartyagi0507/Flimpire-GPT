@@ -86,13 +86,13 @@ const Login = () => {
   };
 
   return (
-    <div className="">
+    <div className="w-screen">
       <Header />
-      <div className="absolute w-screen">
+      <div className="absolute ">
         <img
           src= {background}
           alt="login-background"
-          className="object-cover w-screen h-screen"
+          className="bg-cover bg-fixed object-cover w-screen h-screen"
         />
       </div>
       <form

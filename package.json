@@ -14,6 +14,7 @@
     "@testing-library/react": "^15.0.7",
     "@testing-library/user-event": "^14.5.2",
     "firebase": "^10.11.1",
+    "firebase-tools": "^13.10.2",
     "openai": "^4.47.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
