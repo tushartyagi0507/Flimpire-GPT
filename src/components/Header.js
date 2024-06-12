@@ -67,7 +67,8 @@ const Header = () => {
      className="absolute w-full z-30 flex flex-col bg-gradient-to-b from-black
      md:flex-row md:justify-between">
       <div className="w-28 mx-auto mt-6 
-      md:ml-44 md:mt-6 md:w-44">
+      min-[500px]:w-36
+      lg:ml-44 lg:mt-6 md:w-44">
    <a href='/browse'><img src={project_logo} alt="logo" /> </a>     
       </div>
 

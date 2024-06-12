@@ -98,11 +98,12 @@ const Login = () => {
       <form
         id="form"
         className="w-full absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80 
-        md:my-36 md:w-3/12"
+        md:my-36 md:w-6/12
+        lg:w-4/12"
         onSubmit={(e) => {
           e.preventDefault();
         }}
-      >
+      > 
         {isSignIn ? (
           <h1 className="text-white font-black text-2xl m-2 ">Sign In</h1>
         ) : (

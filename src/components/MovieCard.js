@@ -6,7 +6,7 @@ const MovieCard = ({posterPath}) => {
     // console.log(CDN_IMG+posterPath)
   return (
     <div className='w-32 pr-2
-    md:w-48'>
+    md:w-40 lg:w-48'>
         <img alt="movie logo" src={CDN_IMG + posterPath}/>
     </div>
   )

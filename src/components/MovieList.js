@@ -6,7 +6,7 @@ const MovieList = ({ title, movies }) => {
   if (movies === null) return;
 //   console.log(movies[0].poster_path);
   return ( movies &&
-    <div className="relative bottom-48 z-20 mt-2 overflow 
+    <div className="relative max-[400px]:bottom-4 sm:bottom-24 md:bottom-36 min-[930px]:bottom-48 z-20 mt-2 overflow 
     md:ml-12 md:mt-4">
       <h1 className="text-bolder text-white text-lg 
       md:text-2xl mb-4">{title}</h1>

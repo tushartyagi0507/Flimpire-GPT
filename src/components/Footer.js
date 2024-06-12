@@ -19,9 +19,8 @@ const Footer = () => {
         <span className='md:mr-6 '>Contact</span>
     </div>
  </div>
- <div className='text-white w-full mx-0
- md:mx-12'>
-___________________________________________________________________________________________________________________________________________________________________
+ <div className='text-white w-11/12 mx-auto'>
+ <hr className="my-6 border-white lg:my-8" />
 </div>
 <div className='text-center text-white mt-4'>
     Created By- <a href="https://www.linkedin.com/in/tushartyagi0507" target='_blank' 

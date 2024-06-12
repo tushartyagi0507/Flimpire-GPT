@@ -10,8 +10,7 @@ const VideoBackground = ({ movieId }) => {
     <div>
       {/* {console.log(mute)} */}
       <iframe
-        className="w-screen aspect-video
-        md:w-screen md:h-screen"
+        className="w-screen aspect-video"
         src={
           "https://www.youtube.com/embed/" +
           id +
