@@ -3,7 +3,7 @@ import { project_logo } from '../utils/constants'
 
 const Footer = () => {
   return (
-    <div className=' sticky bottom-40 bg-black w-full -pb-16 mt-4'>
+    <div className=' sticky bottom-40 bg-black w-full -pb-16 mt-60 min-[500px]:mt-44 sm:mt-20 md:mt-6 lg:mt-4'>
     
  <div className='flex flex-col text-gray-500
  md:flex md:flex-row md:justify-between'>
